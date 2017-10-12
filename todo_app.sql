@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS todo_app;
+
+DROP USER IF EXISTS michael;
