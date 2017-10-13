@@ -68,6 +68,17 @@ WHERE title LIKE '%mistake%';
 DELETE
 FROM tasks
 WHERE title = 'mistake 1';
-
+--23
+SELECT title, description
+FROM tasks
+WHERE title LIKE '%mistake%';
+--24
+DELETE
+FROM tasks
+WHERE title LIKE '%mistake%';
+--25
+SELECT *
+FROM tasks
+ORDER BY title;
 
 \c kevinyogi
