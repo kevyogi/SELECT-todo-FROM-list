@@ -38,3 +38,12 @@ INSERT INTO tasks (title, description)
 SELECT *
 FROM tasks
 WHERE completed_at IS NULL;
+
+UPDATE tasks
+SET completed_at = now()
+WHERE id = 1;
+
+SELECT *
+FROM tasks;
+
+\c kevinyogi
