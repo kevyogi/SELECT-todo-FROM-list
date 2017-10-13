@@ -34,3 +34,7 @@ INSERT INTO tasks (title, description, created_at, updated_at, completed_at)
 
 INSERT INTO tasks (title, description)
   VALUES ('Study PostgreSQL', 'Read all the documentation');
+
+SELECT *
+FROM tasks
+WHERE completed_at IS NULL;
