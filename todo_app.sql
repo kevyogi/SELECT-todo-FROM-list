@@ -52,8 +52,18 @@ SELECT *
 FROM tasks
 ORDER BY created_at DESC;
 --18
+INSERT INTO tasks (title, description)
+  VALUES ('mistake 1', 'a test entry');
+--19
+INSERT INTO tasks (title, description)
+  VALUES ('mistake 2', 'another test entry');
+--20
+INSERT INTO tasks (title, description)
+  VALUES ('third mistake', 'another test entry');
+--21
+SELECT title
+FROM tasks
+WHERE title LIKE '%mistake%';
 
--- SELECT *
--- FROM tasks;
 
 \c kevinyogi
