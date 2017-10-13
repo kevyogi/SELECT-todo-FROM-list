@@ -14,3 +14,4 @@ CREATE TABLE tasks (
   updated_at    timestamp    NULL,
   completed     boolean      NOT NULL DEFAULT false
   )
+
