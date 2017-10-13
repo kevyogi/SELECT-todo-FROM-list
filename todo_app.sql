@@ -64,6 +64,10 @@ INSERT INTO tasks (title, description)
 SELECT title
 FROM tasks
 WHERE title LIKE '%mistake%';
+--22
+DELETE
+FROM tasks
+WHERE title = 'mistake 1';
 
 
 \c kevinyogi
