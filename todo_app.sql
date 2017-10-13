@@ -23,3 +23,8 @@ ALTER TABLE tasks
 ALTER TABLE tasks
   ADD COLUMN completed_at timestamp NULL DEFAULT NULL;
 
+ALTER TABLE tasks
+  ALTER COLUMN updated_at SET NOT NULL;
+
+ALTER TABLE tasks
+  ALTER COLUMN updated_at SET DEFAULT now();
