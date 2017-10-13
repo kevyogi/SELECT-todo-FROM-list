@@ -43,7 +43,11 @@ UPDATE tasks
 SET completed_at = now()
 WHERE id = 1;
 
-SELECT *
-FROM tasks;
+SELECT title, description
+FROM tasks
+WHERE completed_at IS NULL;
+
+-- SELECT *
+-- FROM tasks;
 
 \c kevinyogi
